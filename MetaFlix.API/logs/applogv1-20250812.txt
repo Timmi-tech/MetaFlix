@@ -1,0 +1,954 @@
+2025-08-12 00:08:42.071 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-12 00:08:42.297 +01:00 [INF] Now listening on: http://localhost:5032
+2025-08-12 00:08:42.303 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 00:08:42.307 +01:00 [INF] Hosting environment: Development
+2025-08-12 00:08:42.311 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\MetaFlix\metaflix.api
+2025-08-12 00:08:49.821 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5032/ - null null
+2025-08-12 00:08:49.962 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-08-12 00:08:50.054 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5032/ - 404 0 null 235.6776ms
+2025-08-12 00:08:50.095 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5032/, Response status code: 404
+2025-08-12 00:08:55.752 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5032/swagger - null null
+2025-08-12 00:08:55.765 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5032/swagger - 301 0 null 13.4637ms
+2025-08-12 00:08:55.801 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5032/swagger/index.html - null null
+2025-08-12 00:08:55.901 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5032/swagger/index.html - 200 null text/html;charset=utf-8 99.8842ms
+2025-08-12 00:08:55.960 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5032/swagger/swagger-ui.css - null null
+2025-08-12 00:08:55.977 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5032/swagger/index.css - null null
+2025-08-12 00:08:55.977 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5032/swagger/swagger-ui-bundle.js - null null
+2025-08-12 00:08:55.979 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5032/swagger/index.js - null null
+2025-08-12 00:08:55.979 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5032/swagger/swagger-ui-standalone-preset.js - null null
+2025-08-12 00:08:56.004 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-08-12 00:08:56.010 +01:00 [INF] Sending file. Request path: '/index.css'. Physical path: 'N/A'
+2025-08-12 00:08:56.021 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5032/swagger/index.js - 200 null application/javascript;charset=utf-8 41.9272ms
+2025-08-12 00:08:56.031 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-08-12 00:08:56.039 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-08-12 00:08:56.053 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5032/swagger/index.css - 200 202 text/css 75.8712ms
+2025-08-12 00:08:56.060 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5032/swagger/swagger-ui.css - 200 154948 text/css 99.8861ms
+2025-08-12 00:08:56.060 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5032/swagger/swagger-ui-standalone-preset.js - 200 229223 text/javascript 80.2935ms
+2025-08-12 00:08:56.067 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5032/swagger/swagger-ui-bundle.js - 200 1466324 text/javascript 89.4888ms
+2025-08-12 00:08:56.840 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5032/swagger/v1/swagger.json - null null
+2025-08-12 00:08:57.242 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5032/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 402.97ms
+2025-08-12 00:10:17.249 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/authentication/Register - application/json 148
+2025-08-12 00:10:17.280 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:10:17.284 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:10:17.294 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (MetaFlix.API)'
+2025-08-12 00:10:17.335 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(StreamNest.Application.DTOs.UserForRegistrationDto) on controller StreamNest.API.Controllers.AuthenticationController (MetaFlix.API).
+2025-08-12 00:10:20.931 +01:00 [INF] Executed DbCommand (67ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-12 00:10:20.975 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-08-12 00:10:21.196 +01:00 [INF] Executed DbCommand (17ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "RefreshToken", "RefreshTokenExpiryTime", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+2025-08-12 00:10:21.224 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2025-08-12 00:10:21.233 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.RegisterUser (MetaFlix.API) in 3875.4483ms
+2025-08-12 00:10:21.239 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (MetaFlix.API)'
+2025-08-12 00:10:21.251 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/authentication/Register - 201 0 null 4002.0353ms
+2025-08-12 00:10:46.698 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/authentication/login - application/json 56
+2025-08-12 00:10:46.712 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:10:46.715 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:10:46.724 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (MetaFlix.API)'
+2025-08-12 00:10:46.736 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (MetaFlix.API).
+2025-08-12 00:10:46.815 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-08-12 00:10:46.951 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-12 00:10:46.966 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-08-12 00:10:47.015 +01:00 [INF] Executed DbCommand (14ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-08-12 00:10:47.054 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-08-12 00:10:47.066 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (MetaFlix.API) in 324.6174ms
+2025-08-12 00:10:47.073 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (MetaFlix.API)'
+2025-08-12 00:10:47.076 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/authentication/login - 200 null application/json; charset=utf-8 377.8032ms
+2025-08-12 00:11:34.339 +01:00 [INF] Application is shutting down...
+2025-08-12 00:11:45.441 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-12 00:11:45.638 +01:00 [INF] Now listening on: http://localhost:5032
+2025-08-12 00:11:45.645 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 00:11:45.650 +01:00 [INF] Hosting environment: Development
+2025-08-12 00:11:45.655 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\MetaFlix\metaflix.api
+2025-08-12 00:15:13.222 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/VideoPosts - multipart/form-data; boundary=----WebKitFormBoundaryBTtizsEs7ZaWFAIs 5600403
+2025-08-12 00:15:13.355 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-08-12 00:15:13.384 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:15:13.389 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:15:13.510 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.CreateVideoPost (MetaFlix.API)'
+2025-08-12 00:15:13.545 +01:00 [INF] Route matched with {action = "CreateVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateVideoPost(StreamNest.Application.DTOs.CreateVideoDto) on controller StreamNest.API.Controllers.VideoPostController (MetaFlix.API).
+2025-08-12 00:15:20.330 +01:00 [INF] Executed DbCommand (77ms) [Parameters=[@p0='?', @p1='?' (DbType = Guid), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?' (DbType = DateTime), @p9='?', @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Tags" ("Name")
+VALUES (@p0)
+RETURNING "Id";
+INSERT INTO "Videos" ("Id", "AgeRating", "CreatorId", "Description", "Genre", "ThumbnailUrl", "Title", "UploadDate", "VideoUrl", "VideoYear")
+VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-08-12 00:15:20.373 +01:00 [INF] Executed DbCommand (8ms) [Parameters=[@p11='?' (DbType = Int32), @p12='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "VideoTags" ("TagId", "VideoId")
+VALUES (@p11, @p12);
+2025-08-12 00:15:20.411 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'StreamNest.Application.DTOs.VideoDto'.
+2025-08-12 00:15:20.467 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.CreateVideoPost (MetaFlix.API) in 6912.544ms
+2025-08-12 00:15:20.477 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.CreateVideoPost (MetaFlix.API)'
+2025-08-12 00:15:20.493 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/VideoPosts - 201 null application/json; charset=utf-8 7273.7334ms
+2025-08-12 00:15:49.922 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/Rating/rate - application/json 69
+2025-08-12 00:15:49.949 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:15:49.955 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:15:49.961 +01:00 [INF] Executing endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:15:49.970 +01:00 [INF] Route matched with {action = "RateMovie", controller = "Rating"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RateMovieAsync(MetaFlix.Application.DTOs.RateVideoDto) on controller MetaFlix.API.Controllers.RatingController (MetaFlix.API).
+2025-08-12 00:15:50.057 +01:00 [INF] Executed action MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API) in 81.0423ms
+2025-08-12 00:15:50.061 +01:00 [INF] Executed endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:15:50.065 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Cannot create a DbSet for 'Rating' because this type is not included in the model for the context.
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityType()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.CheckState()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.get_EntityQueryable()
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.System.Linq.IQueryable.get_Provider()
+   at System.Linq.Queryable.Where[TSource](IQueryable`1 source, Expression`1 predicate)
+   at StreamNest.Infrastructure.Repository.RepositoryBase`1.FindByCondition(Expression`1 expression, Boolean trackChanges) in C:\Users\user\Desktop\c##\MetaFlix\Metaflix.Infrastructure\Repository\RepositoryBase.cs:line 23
+   at MetaFlix.Infrastructure.Repository.RatingsRepository.GetUserRatingAsync(Guid videoId, String userId, Boolean trackChanges) in C:\Users\user\Desktop\c##\MetaFlix\Metaflix.Infrastructure\Repository\RatingRepository.cs:line 19
+   at MetaFlix.Application.Services.RatingService.RateVideoAsync(String userId, RateVideoDto dto) in C:\Users\user\Desktop\c##\MetaFlix\Metaflix.Application\Services\RatingService.cs:line 20
+   at MetaFlix.API.Controllers.RatingController.RateMovieAsync(RateVideoDto dto) in C:\Users\user\Desktop\c##\MetaFlix\metaflix.api\Controllers\RatingController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-12 00:15:50.158 +01:00 [ERR] Exception: InvalidOperationException - Cannot create a DbSet for 'Rating' because this type is not included in the model for the context.
+2025-08-12 00:15:50.180 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/Rating/rate - 500 null application/json; charset=utf-8 258.0114ms
+2025-08-12 00:19:05.041 +01:00 [INF] Application is shutting down...
+2025-08-12 00:19:18.732 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-12 00:19:18.964 +01:00 [INF] Now listening on: http://localhost:5032
+2025-08-12 00:19:18.971 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 00:19:18.974 +01:00 [INF] Hosting environment: Development
+2025-08-12 00:19:18.977 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\MetaFlix\metaflix.api
+2025-08-12 00:19:23.828 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/Rating/rate - application/json 69
+2025-08-12 00:19:23.914 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-08-12 00:19:23.938 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:19:23.944 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:19:24.062 +01:00 [INF] Executing endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:19:24.090 +01:00 [INF] Route matched with {action = "RateMovie", controller = "Rating"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RateMovieAsync(MetaFlix.Application.DTOs.RateVideoDto) on controller MetaFlix.API.Controllers.RatingController (MetaFlix.API).
+2025-08-12 00:19:25.938 +01:00 [ERR] Failed executing DbCommand (80ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."Score", r."UpdatedAt", r."UserId", r."VideoId"
+FROM "Ratings" AS r
+WHERE r."VideoId" = @__videoId_0 AND r."UserId" = @__userId_1
+LIMIT 1
+2025-08-12 00:19:25.986 +01:00 [ERR] An exception occurred while iterating over the results of a query for context type 'RepositoryContext'.
+Npgsql.PostgresException (0x80004005): 42P01: relation "Ratings" does not exist
+
+POSITION: 87
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Ratings" does not exist
+    Position: 87
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+Npgsql.PostgresException (0x80004005): 42P01: relation "Ratings" does not exist
+
+POSITION: 87
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Ratings" does not exist
+    Position: 87
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+2025-08-12 00:19:26.032 +01:00 [INF] Executed action MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API) in 1929.0791ms
+2025-08-12 00:19:26.042 +01:00 [INF] Executed endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:19:26.052 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Npgsql.PostgresException (0x80004005): 42P01: relation "Ratings" does not exist
+
+POSITION: 87
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at MetaFlix.Infrastructure.Repository.RatingsRepository.GetUserRatingAsync(Guid videoId, String userId, Boolean trackChanges) in C:\Users\user\Desktop\c##\MetaFlix\Metaflix.Infrastructure\Repository\RatingRepository.cs:line 19
+   at MetaFlix.Application.Services.RatingService.RateVideoAsync(String userId, RateVideoDto dto) in C:\Users\user\Desktop\c##\MetaFlix\Metaflix.Application\Services\RatingService.cs:line 20
+   at MetaFlix.API.Controllers.RatingController.RateMovieAsync(RateVideoDto dto) in C:\Users\user\Desktop\c##\MetaFlix\metaflix.api\Controllers\RatingController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+  Exception data:
+    Severity: ERROR
+    SqlState: 42P01
+    MessageText: relation "Ratings" does not exist
+    Position: 87
+    File: parse_relation.c
+    Line: 1452
+    Routine: parserOpenTable
+2025-08-12 00:19:26.145 +01:00 [ERR] Exception: PostgresException - 42P01: relation "Ratings" does not exist
+
+POSITION: 87
+2025-08-12 00:19:26.203 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/Rating/rate - 500 null application/json; charset=utf-8 2376.7207ms
+2025-08-12 00:20:00.422 +01:00 [INF] Application is shutting down...
+2025-08-12 00:21:05.770 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-12 00:21:05.946 +01:00 [INF] Now listening on: http://localhost:5032
+2025-08-12 00:21:05.952 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 00:21:05.955 +01:00 [INF] Hosting environment: Development
+2025-08-12 00:21:05.959 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\MetaFlix\metaflix.api
+2025-08-12 00:21:09.090 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/Rating/rate - application/json 69
+2025-08-12 00:21:09.186 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-08-12 00:21:09.215 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:21:09.218 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:21:09.359 +01:00 [INF] Executing endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:21:09.392 +01:00 [INF] Route matched with {action = "RateMovie", controller = "Rating"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RateMovieAsync(MetaFlix.Application.DTOs.RateVideoDto) on controller MetaFlix.API.Controllers.RatingController (MetaFlix.API).
+2025-08-12 00:21:11.457 +01:00 [INF] Executed DbCommand (70ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."Score", r."UpdatedAt", r."UserId", r."VideoId"
+FROM "Ratings" AS r
+WHERE r."VideoId" = @__videoId_0 AND r."UserId" = @__userId_1
+LIMIT 1
+2025-08-12 00:21:11.621 +01:00 [INF] Executed DbCommand (13ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."ThumbnailUrl", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."ThumbnailUrl", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-08-12 00:21:11.674 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-08-12 00:21:11.953 +01:00 [INF] Executed action MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API) in 2548.5391ms
+2025-08-12 00:21:11.965 +01:00 [INF] Executed endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:21:11.974 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The instance of entity type 'User' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.ThrowIdentityConflict(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry, Boolean updateDuplicate)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.IdentityMap`1.Add(TKey key, InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.NullableKeyIdentityMap`1.Add(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.StartTracking(InternalEntityEntry entry)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState oldState, EntityState newState, Boolean acceptChanges, Boolean modifyProperties)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.InternalEntityEntry.SetEntityState(EntityState entityState, Boolean acceptChanges, Boolean modifyProperties, Nullable`1 forceStateWhenUnknownKey, Nullable`1 fallbackState)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.PaintAction(EntityEntryGraphNode`1 node)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityEntryGraphIterator.TraverseGraph[TState](EntityEntryGraphNode`1 node, Func`2 handleNode)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.EntityGraphAttacher.AttachGraph(InternalEntityEntry rootEntry, EntityState targetState, EntityState storeGeneratedWithKeySetTargetState, Boolean forceStateWhenUnknownKey)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.SetEntityState(InternalEntityEntry entry, EntityState entityState)
+   at Microsoft.EntityFrameworkCore.Internal.InternalDbSet`1.Add(TEntity entity)
+   at StreamNest.Infrastructure.Repository.RepositoryBase`1.Create(T entity) in C:\Users\user\Desktop\c##\MetaFlix\Metaflix.Infrastructure\Repository\RepositoryBase.cs:line 30
+   at MetaFlix.Infrastructure.Repository.RatingsRepository.AddRatingAsync(Rating rating) in C:\Users\user\Desktop\c##\MetaFlix\Metaflix.Infrastructure\Repository\RatingRepository.cs:line 14
+   at MetaFlix.Application.Services.RatingService.RateVideoAsync(String userId, RateVideoDto dto) in C:\Users\user\Desktop\c##\MetaFlix\Metaflix.Application\Services\RatingService.cs:line 44
+   at MetaFlix.API.Controllers.RatingController.RateMovieAsync(RateVideoDto dto) in C:\Users\user\Desktop\c##\MetaFlix\metaflix.api\Controllers\RatingController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-12 00:21:12.069 +01:00 [ERR] Exception: InvalidOperationException - The instance of entity type 'User' cannot be tracked because another instance with the same key value for {'Id'} is already being tracked. When attaching existing entities, ensure that only one entity instance with a given key value is attached. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting key values.
+2025-08-12 00:21:12.122 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/Rating/rate - 500 null application/json; charset=utf-8 3034.5553ms
+2025-08-12 00:23:11.926 +01:00 [INF] Application is shutting down...
+2025-08-12 00:25:01.119 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-12 00:25:01.282 +01:00 [INF] Now listening on: http://localhost:5032
+2025-08-12 00:25:01.290 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 00:25:01.293 +01:00 [INF] Hosting environment: Development
+2025-08-12 00:25:01.296 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\MetaFlix\metaflix.api
+2025-08-12 00:25:14.707 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/Rating/rate - application/json 69
+2025-08-12 00:25:14.866 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-08-12 00:25:14.913 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:25:14.917 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:25:15.096 +01:00 [INF] Executing endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:25:15.140 +01:00 [INF] Route matched with {action = "RateMovie", controller = "Rating"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RateMovieAsync(MetaFlix.Application.DTOs.RateVideoDto) on controller MetaFlix.API.Controllers.RatingController (MetaFlix.API).
+2025-08-12 00:25:17.570 +01:00 [INF] Executed DbCommand (70ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."Score", r."UpdatedAt", r."UserId", r."VideoId"
+FROM "Ratings" AS r
+WHERE r."VideoId" = @__videoId_0 AND r."UserId" = @__userId_1
+LIMIT 1
+2025-08-12 00:25:17.825 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."ThumbnailUrl", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."ThumbnailUrl", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-08-12 00:25:17.918 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-08-12 00:25:18.565 +01:00 [ERR] Failed executing DbCommand (20ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?' (DbType = Boolean), @p19='?', @p20='?' (DbType = Int32), @p21='?', @p22='?' (DbType = Guid), @p23='?', @p24='?', @p25='?', @p26='?', @p27='?', @p28='?', @p29='?' (DbType = DateTime), @p30='?', @p31='?' (DbType = Int32), @p32='?' (DbType = Guid), @p33='?' (DbType = DateTime), @p34='?' (DbType = Int32), @p35='?' (DbType = DateTime), @p36='?', @p37='?' (DbType = Guid), @p38='?' (DbType = Int32), @p39='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "RefreshToken", "RefreshTokenExpiryTime", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+INSERT INTO "Tags" ("Id", "Name")
+VALUES (@p20, @p21);
+INSERT INTO "Videos" ("Id", "AgeRating", "CreatorId", "Description", "Genre", "ThumbnailUrl", "Title", "UploadDate", "VideoUrl", "VideoYear")
+VALUES (@p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31);
+INSERT INTO "Ratings" ("Id", "CreatedAt", "Score", "UpdatedAt", "UserId", "VideoId")
+VALUES (@p32, @p33, @p34, @p35, @p36, @p37);
+INSERT INTO "VideoTags" ("TagId", "VideoId")
+VALUES (@p38, @p39);
+2025-08-12 00:25:18.637 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'RepositoryContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_AspNetUsers"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_AspNetUsers"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: AspNetUsers
+    ConstraintName: PK_AspNetUsers
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_AspNetUsers"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_AspNetUsers"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: AspNetUsers
+    ConstraintName: PK_AspNetUsers
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-08-12 00:25:18.721 +01:00 [INF] Executed action MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API) in 3567.1428ms
+2025-08-12 00:25:18.737 +01:00 [INF] Executed endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:25:18.746 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_AspNetUsers"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_AspNetUsers"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: AspNetUsers
+    ConstraintName: PK_AspNetUsers
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at StreamNest.Infrastructure.Repository.RepositoryManager.SaveAsync() in C:\Users\user\Desktop\c##\MetaFlix\Metaflix.Infrastructure\Repository\RepositoryManager.cs:line 34
+   at MetaFlix.Application.Services.RatingService.RateVideoAsync(String userId, RateVideoDto dto) in C:\Users\user\Desktop\c##\MetaFlix\Metaflix.Application\Services\RatingService.cs:line 46
+   at MetaFlix.API.Controllers.RatingController.RateMovieAsync(RateVideoDto dto) in C:\Users\user\Desktop\c##\MetaFlix\metaflix.api\Controllers\RatingController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-12 00:25:19.060 +01:00 [ERR] Exception: DbUpdateException - An error occurred while saving the entity changes. See the inner exception for details.
+2025-08-12 00:25:19.165 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/Rating/rate - 500 null application/json; charset=utf-8 4460.3137ms
+2025-08-12 00:25:48.215 +01:00 [INF] Application is shutting down...
+2025-08-12 00:27:57.809 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-12 00:27:58.029 +01:00 [INF] Now listening on: http://localhost:5032
+2025-08-12 00:27:58.038 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 00:27:58.041 +01:00 [INF] Hosting environment: Development
+2025-08-12 00:27:58.045 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\MetaFlix\metaflix.api
+2025-08-12 00:28:14.795 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/authentication/Register - application/json 148
+2025-08-12 00:28:14.941 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-08-12 00:28:14.984 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:28:14.991 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:28:15.165 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (MetaFlix.API)'
+2025-08-12 00:28:15.209 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(StreamNest.Application.DTOs.UserForRegistrationDto) on controller StreamNest.API.Controllers.AuthenticationController (MetaFlix.API).
+2025-08-12 00:28:18.225 +01:00 [INF] Executed DbCommand (74ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-12 00:28:18.300 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-08-12 00:28:18.599 +01:00 [INF] Executed DbCommand (20ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "RefreshToken", "RefreshTokenExpiryTime", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+2025-08-12 00:28:18.636 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2025-08-12 00:28:18.650 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.RegisterUser (MetaFlix.API) in 3422.4774ms
+2025-08-12 00:28:18.724 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (MetaFlix.API)'
+2025-08-12 00:28:18.770 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/authentication/Register - 201 0 null 3976.1919ms
+2025-08-12 00:28:25.566 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/authentication/login - application/json 56
+2025-08-12 00:28:25.583 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:28:25.592 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:28:25.603 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (MetaFlix.API)'
+2025-08-12 00:28:25.620 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (MetaFlix.API).
+2025-08-12 00:28:25.946 +01:00 [INF] Executed DbCommand (205ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-08-12 00:28:26.143 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-12 00:28:26.155 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-08-12 00:28:26.194 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-08-12 00:28:26.447 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-08-12 00:28:26.827 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (MetaFlix.API) in 1197.7303ms
+2025-08-12 00:28:26.834 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (MetaFlix.API)'
+2025-08-12 00:28:26.842 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/authentication/login - 200 null application/json; charset=utf-8 1275.5148ms
+2025-08-12 00:29:02.449 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/VideoPosts - multipart/form-data; boundary=----WebKitFormBoundaryddb6kqms2aLfOHYv 1705351
+2025-08-12 00:29:02.467 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:29:02.491 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:29:02.514 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.VideoPostController.CreateVideoPost (MetaFlix.API)'
+2025-08-12 00:29:02.542 +01:00 [INF] Route matched with {action = "CreateVideoPost", controller = "VideoPost"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateVideoPost(StreamNest.Application.DTOs.CreateVideoDto) on controller StreamNest.API.Controllers.VideoPostController (MetaFlix.API).
+2025-08-12 00:29:06.809 +01:00 [INF] Executed DbCommand (11ms) [Parameters=[@p0='?', @p1='?' (DbType = Guid), @p2='?', @p3='?', @p4='?', @p5='?', @p6='?', @p7='?', @p8='?' (DbType = DateTime), @p9='?', @p10='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Tags" ("Name")
+VALUES (@p0)
+RETURNING "Id";
+INSERT INTO "Videos" ("Id", "AgeRating", "CreatorId", "Description", "Genre", "ThumbnailUrl", "Title", "UploadDate", "VideoUrl", "VideoYear")
+VALUES (@p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10);
+2025-08-12 00:29:06.824 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@p11='?' (DbType = Int32), @p12='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "VideoTags" ("TagId", "VideoId")
+VALUES (@p11, @p12);
+2025-08-12 00:29:06.850 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'StreamNest.Application.DTOs.VideoDto'.
+2025-08-12 00:29:07.069 +01:00 [INF] Executed action StreamNest.API.Controllers.VideoPostController.CreateVideoPost (MetaFlix.API) in 4516.0334ms
+2025-08-12 00:29:07.073 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.VideoPostController.CreateVideoPost (MetaFlix.API)'
+2025-08-12 00:29:07.077 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/VideoPosts - 201 null application/json; charset=utf-8 4628.5859ms
+2025-08-12 00:29:23.226 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/Rating/rate - application/json 69
+2025-08-12 00:29:23.232 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:29:23.235 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:29:23.241 +01:00 [INF] Executing endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:29:23.262 +01:00 [INF] Route matched with {action = "RateMovie", controller = "Rating"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RateMovieAsync(MetaFlix.Application.DTOs.RateVideoDto) on controller MetaFlix.API.Controllers.RatingController (MetaFlix.API).
+2025-08-12 00:29:23.303 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."Score", r."UpdatedAt", r."UserId", r."VideoId"
+FROM "Ratings" AS r
+WHERE r."VideoId" = @__videoId_0 AND r."UserId" = @__userId_1
+LIMIT 1
+2025-08-12 00:29:23.798 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."ThumbnailUrl", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."ThumbnailUrl", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-08-12 00:29:23.826 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-08-12 00:29:23.923 +01:00 [ERR] Failed executing DbCommand (17ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?' (DbType = Boolean), @p19='?', @p20='?' (DbType = Int32), @p21='?', @p22='?' (DbType = Guid), @p23='?', @p24='?', @p25='?', @p26='?', @p27='?', @p28='?', @p29='?' (DbType = DateTime), @p30='?', @p31='?' (DbType = Int32), @p32='?' (DbType = Guid), @p33='?' (DbType = DateTime), @p34='?' (DbType = Int32), @p35='?' (DbType = DateTime), @p36='?', @p37='?' (DbType = Guid), @p38='?' (DbType = Int32), @p39='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "RefreshToken", "RefreshTokenExpiryTime", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+INSERT INTO "Tags" ("Id", "Name")
+VALUES (@p20, @p21);
+INSERT INTO "Videos" ("Id", "AgeRating", "CreatorId", "Description", "Genre", "ThumbnailUrl", "Title", "UploadDate", "VideoUrl", "VideoYear")
+VALUES (@p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31);
+INSERT INTO "Ratings" ("Id", "CreatedAt", "Score", "UpdatedAt", "UserId", "VideoId")
+VALUES (@p32, @p33, @p34, @p35, @p36, @p37);
+INSERT INTO "VideoTags" ("TagId", "VideoId")
+VALUES (@p38, @p39);
+2025-08-12 00:29:23.957 +01:00 [ERR] An exception occurred in the database while saving changes for context type 'RepositoryContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_AspNetUsers"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_AspNetUsers"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: AspNetUsers
+    ConstraintName: PK_AspNetUsers
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_AspNetUsers"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_AspNetUsers"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: AspNetUsers
+    ConstraintName: PK_AspNetUsers
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-08-12 00:29:23.998 +01:00 [INF] Executed action MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API) in 730.8703ms
+2025-08-12 00:29:24.008 +01:00 [INF] Executed endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:29:24.013 +01:00 [ERR] An unhandled exception has occurred while executing the request.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Npgsql.PostgresException (0x80004005): 23505: duplicate key value violates unique constraint "PK_AspNetUsers"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+   at Npgsql.Internal.NpgsqlConnector.ReadMessageLong(Boolean async, DataRowLoadingMode dataRowLoadingMode, Boolean readingNotifications, Boolean isReadingPrependedMessage)
+   at System.Runtime.CompilerServices.PoolingAsyncValueTaskMethodBuilder`1.StateMachineBox`1.System.Threading.Tasks.Sources.IValueTaskSource<TResult>.GetResult(Int16 token)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlDataReader.NextResult(Boolean async, Boolean isConsuming, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteReader(Boolean async, CommandBehavior behavior, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlCommand.ExecuteDbDataReaderAsync(CommandBehavior behavior, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+  Exception data:
+    Severity: ERROR
+    SqlState: 23505
+    MessageText: duplicate key value violates unique constraint "PK_AspNetUsers"
+    Detail: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+    SchemaName: public
+    TableName: AspNetUsers
+    ConstraintName: PK_AspNetUsers
+    File: nbtinsert.c
+    Line: 673
+    Routine: _bt_check_unique
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Npgsql.EntityFrameworkCore.PostgreSQL.Storage.Internal.NpgsqlExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at StreamNest.Infrastructure.Repository.RepositoryManager.SaveAsync() in C:\Users\user\Desktop\c##\MetaFlix\Metaflix.Infrastructure\Repository\RepositoryManager.cs:line 34
+   at MetaFlix.Application.Services.RatingService.RateVideoAsync(String userId, RateVideoDto dto) in C:\Users\user\Desktop\c##\MetaFlix\Metaflix.Application\Services\RatingService.cs:line 46
+   at MetaFlix.API.Controllers.RatingController.RateMovieAsync(RateVideoDto dto) in C:\Users\user\Desktop\c##\MetaFlix\metaflix.api\Controllers\RatingController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+2025-08-12 00:29:24.094 +01:00 [ERR] Exception: DbUpdateException - An error occurred while saving the entity changes. See the inner exception for details.
+2025-08-12 00:29:24.113 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/Rating/rate - 500 null application/json; charset=utf-8 887.9034ms
+2025-08-12 00:30:23.241 +01:00 [INF] Application is shutting down...
+2025-08-12 00:30:28.880 +01:00 [INF] User profile is available. Using 'C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-08-12 00:30:29.058 +01:00 [INF] Now listening on: http://localhost:5032
+2025-08-12 00:30:29.063 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-08-12 00:30:29.067 +01:00 [INF] Hosting environment: Development
+2025-08-12 00:30:29.070 +01:00 [INF] Content root path: C:\Users\user\Desktop\c##\MetaFlix\metaflix.api
+2025-08-12 00:30:35.311 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/Rating/rate - application/json 69
+2025-08-12 00:30:35.342 +01:00 [WRN] Failed to determine the https port for redirect.
+2025-08-12 00:30:35.370 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:30:35.373 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:30:35.471 +01:00 [INF] Executing endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:30:35.491 +01:00 [INF] Route matched with {action = "RateMovie", controller = "Rating"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RateMovieAsync(MetaFlix.Application.DTOs.RateVideoDto) on controller MetaFlix.API.Controllers.RatingController (MetaFlix.API).
+2025-08-12 00:30:36.839 +01:00 [INF] Executed DbCommand (52ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."Score", r."UpdatedAt", r."UserId", r."VideoId"
+FROM "Ratings" AS r
+WHERE r."VideoId" = @__videoId_0 AND r."UserId" = @__userId_1
+LIMIT 1
+2025-08-12 00:30:36.966 +01:00 [INF] Executed DbCommand (9ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."ThumbnailUrl", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."ThumbnailUrl", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-08-12 00:30:37.011 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-08-12 00:30:37.175 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime), @p4='?', @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Ratings" ("Id", "CreatedAt", "Score", "UpdatedAt", "UserId", "VideoId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-08-12 00:30:37.205 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-12 00:30:37.231 +01:00 [INF] Executed action MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API) in 1728.0756ms
+2025-08-12 00:30:37.244 +01:00 [INF] Executed endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:30:37.258 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/Rating/rate - 200 null application/json; charset=utf-8 1948.6294ms
+2025-08-12 00:30:50.061 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5032/api/Rating/9bcd3244-cc3f-4fbf-a01a-8888789b7b5b/average - null null
+2025-08-12 00:30:50.089 +01:00 [INF] Executing endpoint 'MetaFlix.API.Controllers.RatingController.GetAverageRatingAsync (MetaFlix.API)'
+2025-08-12 00:30:50.103 +01:00 [INF] Route matched with {action = "GetAverageRating", controller = "Rating"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAverageRatingAsync(System.Guid) on controller MetaFlix.API.Controllers.RatingController (MetaFlix.API).
+2025-08-12 00:30:50.201 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."Score", r."UpdatedAt", r."UserId", r."VideoId"
+FROM "Ratings" AS r
+WHERE r."VideoId" = @__videoId_0
+2025-08-12 00:30:50.212 +01:00 [INF] Executing OkObjectResult, writing value of type 'MetaFlix.Application.DTOs.VideoRatingResponseDto'.
+2025-08-12 00:30:50.222 +01:00 [INF] Executed action MetaFlix.API.Controllers.RatingController.GetAverageRatingAsync (MetaFlix.API) in 113.0074ms
+2025-08-12 00:30:50.227 +01:00 [INF] Executed endpoint 'MetaFlix.API.Controllers.RatingController.GetAverageRatingAsync (MetaFlix.API)'
+2025-08-12 00:30:50.230 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5032/api/Rating/9bcd3244-cc3f-4fbf-a01a-8888789b7b5b/average - 200 null application/json; charset=utf-8 169.4739ms
+2025-08-12 00:30:59.345 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/Rating/rate - application/json 69
+2025-08-12 00:30:59.353 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:30:59.355 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:30:59.367 +01:00 [INF] Executing endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:30:59.373 +01:00 [INF] Route matched with {action = "RateMovie", controller = "Rating"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RateMovieAsync(MetaFlix.Application.DTOs.RateVideoDto) on controller MetaFlix.API.Controllers.RatingController (MetaFlix.API).
+2025-08-12 00:30:59.415 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."Score", r."UpdatedAt", r."UserId", r."VideoId"
+FROM "Ratings" AS r
+WHERE r."VideoId" = @__videoId_0 AND r."UserId" = @__userId_1
+LIMIT 1
+2025-08-12 00:30:59.436 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p5='?' (DbType = Guid), @p0='?' (DbType = DateTime), @p1='?' (DbType = Int32), @p2='?' (DbType = DateTime), @p3='?', @p4='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+UPDATE "Ratings" SET "CreatedAt" = @p0, "Score" = @p1, "UpdatedAt" = @p2, "UserId" = @p3, "VideoId" = @p4
+WHERE "Id" = @p5;
+2025-08-12 00:30:59.443 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-12 00:30:59.448 +01:00 [INF] Executed action MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API) in 69.1705ms
+2025-08-12 00:30:59.453 +01:00 [INF] Executed endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:30:59.457 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/Rating/rate - 200 null application/json; charset=utf-8 112.0107ms
+2025-08-12 00:31:03.623 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5032/api/Rating/9bcd3244-cc3f-4fbf-a01a-8888789b7b5b/average - null null
+2025-08-12 00:31:03.633 +01:00 [INF] Executing endpoint 'MetaFlix.API.Controllers.RatingController.GetAverageRatingAsync (MetaFlix.API)'
+2025-08-12 00:31:03.636 +01:00 [INF] Route matched with {action = "GetAverageRating", controller = "Rating"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAverageRatingAsync(System.Guid) on controller MetaFlix.API.Controllers.RatingController (MetaFlix.API).
+2025-08-12 00:31:03.648 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."Score", r."UpdatedAt", r."UserId", r."VideoId"
+FROM "Ratings" AS r
+WHERE r."VideoId" = @__videoId_0
+2025-08-12 00:31:03.657 +01:00 [INF] Executing OkObjectResult, writing value of type 'MetaFlix.Application.DTOs.VideoRatingResponseDto'.
+2025-08-12 00:31:03.663 +01:00 [INF] Executed action MetaFlix.API.Controllers.RatingController.GetAverageRatingAsync (MetaFlix.API) in 17.7026ms
+2025-08-12 00:31:03.667 +01:00 [INF] Executed endpoint 'MetaFlix.API.Controllers.RatingController.GetAverageRatingAsync (MetaFlix.API)'
+2025-08-12 00:31:03.670 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5032/api/Rating/9bcd3244-cc3f-4fbf-a01a-8888789b7b5b/average - 200 null application/json; charset=utf-8 46.9294ms
+2025-08-12 00:32:27.087 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/authentication/Register - application/json 150
+2025-08-12 00:32:27.096 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:32:27.099 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:32:27.107 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (MetaFlix.API)'
+2025-08-12 00:32:27.163 +01:00 [INF] Route matched with {action = "RegisterUser", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RegisterUser(StreamNest.Application.DTOs.UserForRegistrationDto) on controller StreamNest.API.Controllers.AuthenticationController (MetaFlix.API).
+2025-08-12 00:32:27.336 +01:00 [INF] Executed DbCommand (5ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-12 00:32:27.353 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-08-12 00:32:27.458 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?', @p1='?' (DbType = Int32), @p2='?', @p3='?', @p4='?' (DbType = Boolean), @p5='?', @p6='?', @p7='?' (DbType = Boolean), @p8='?' (DbType = DateTime), @p9='?', @p10='?', @p11='?', @p12='?', @p13='?' (DbType = Boolean), @p14='?', @p15='?' (DbType = DateTime), @p16='?', @p17='?', @p18='?' (DbType = Boolean), @p19='?'], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "AspNetUsers" ("Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "RefreshToken", "RefreshTokenExpiryTime", "Role", "SecurityStamp", "TwoFactorEnabled", "UserName")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19);
+2025-08-12 00:32:27.473 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 201
+2025-08-12 00:32:27.476 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.RegisterUser (MetaFlix.API) in 301.8217ms
+2025-08-12 00:32:27.481 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.RegisterUser (MetaFlix.API)'
+2025-08-12 00:32:27.485 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/authentication/Register - 201 0 null 398.3064ms
+2025-08-12 00:32:35.918 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/authentication/login - application/json 57
+2025-08-12 00:32:35.927 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:32:35.929 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:32:35.933 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (MetaFlix.API)'
+2025-08-12 00:32:35.946 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (MetaFlix.API).
+2025-08-12 00:32:35.964 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-08-12 00:32:36.096 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-12 00:32:36.105 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-08-12 00:32:36.123 +01:00 [INF] Executed DbCommand (2ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-08-12 00:32:36.142 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-08-12 00:32:36.151 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (MetaFlix.API) in 196.2385ms
+2025-08-12 00:32:36.156 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (MetaFlix.API)'
+2025-08-12 00:32:36.160 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/authentication/login - 200 null application/json; charset=utf-8 241.9716ms
+2025-08-12 00:32:40.111 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/authentication/login - application/json 57
+2025-08-12 00:32:40.119 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:32:40.123 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:32:40.127 +01:00 [INF] Executing endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (MetaFlix.API)'
+2025-08-12 00:32:40.134 +01:00 [INF] Route matched with {action = "Authenticate", controller = "Authentication"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Authenticate(StreamNest.Application.DTOs.UserForAuthenticationDto) on controller StreamNest.API.Controllers.AuthenticationController (MetaFlix.API).
+2025-08-12 00:32:40.179 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-08-12 00:32:40.282 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedUserName_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedUserName" = @__normalizedUserName_0
+LIMIT 1
+2025-08-12 00:32:40.290 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__normalizedEmail_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."NormalizedEmail" = @__normalizedEmail_0
+LIMIT 2
+2025-08-12 00:32:40.300 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p19='?', @p0='?' (DbType = Int32), @p1='?', @p20='?', @p2='?', @p3='?' (DbType = Boolean), @p4='?', @p5='?', @p6='?' (DbType = Boolean), @p7='?' (DbType = DateTime), @p8='?', @p9='?', @p10='?', @p11='?', @p12='?' (DbType = Boolean), @p13='?', @p14='?' (DbType = DateTime), @p15='?', @p16='?', @p17='?' (DbType = Boolean), @p18='?'], CommandType='"Text"', CommandTimeout='30']
+UPDATE "AspNetUsers" SET "AccessFailedCount" = @p0, "ConcurrencyStamp" = @p1, "Email" = @p2, "EmailConfirmed" = @p3, "FirstName" = @p4, "LastName" = @p5, "LockoutEnabled" = @p6, "LockoutEnd" = @p7, "NormalizedEmail" = @p8, "NormalizedUserName" = @p9, "PasswordHash" = @p10, "PhoneNumber" = @p11, "PhoneNumberConfirmed" = @p12, "RefreshToken" = @p13, "RefreshTokenExpiryTime" = @p14, "Role" = @p15, "SecurityStamp" = @p16, "TwoFactorEnabled" = @p17, "UserName" = @p18
+WHERE "Id" = @p19 AND "ConcurrencyStamp" = @p20;
+2025-08-12 00:32:40.307 +01:00 [INF] Executing OkObjectResult, writing value of type 'StreamNest.Application.DTOs.TokenDto'.
+2025-08-12 00:32:40.313 +01:00 [INF] Executed action StreamNest.API.Controllers.AuthenticationController.Authenticate (MetaFlix.API) in 136.599ms
+2025-08-12 00:32:40.319 +01:00 [INF] Executed endpoint 'StreamNest.API.Controllers.AuthenticationController.Authenticate (MetaFlix.API)'
+2025-08-12 00:32:40.321 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/authentication/login - 200 null application/json; charset=utf-8 209.7146ms
+2025-08-12 00:33:05.197 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5032/api/Rating/rate - application/json 69
+2025-08-12 00:33:05.204 +01:00 [INF] CORS policy execution failed.
+2025-08-12 00:33:05.207 +01:00 [INF] Request origin http://localhost:5032 does not have permission to access the resource.
+2025-08-12 00:33:05.211 +01:00 [INF] Executing endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:33:05.240 +01:00 [INF] Route matched with {action = "RateMovie", controller = "Rating"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] RateMovieAsync(MetaFlix.Application.DTOs.RateVideoDto) on controller MetaFlix.API.Controllers.RatingController (MetaFlix.API).
+2025-08-12 00:33:05.259 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__videoId_0='?' (DbType = Guid), @__userId_1='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."Score", r."UpdatedAt", r."UserId", r."VideoId"
+FROM "Ratings" AS r
+WHERE r."VideoId" = @__videoId_0 AND r."UserId" = @__userId_1
+LIMIT 1
+2025-08-12 00:33:05.269 +01:00 [INF] Executed DbCommand (3ms) [Parameters=[@__videoPostId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT t."Id", t."AgeRating", t."CreatorId", t."Description", t."Genre", t."ThumbnailUrl", t."Title", t."UploadDate", t."VideoUrl", t."VideoYear", t."Id0", t."AccessFailedCount", t."ConcurrencyStamp", t."Email", t."EmailConfirmed", t."FirstName", t."LastName", t."LockoutEnabled", t."LockoutEnd", t."NormalizedEmail", t."NormalizedUserName", t."PasswordHash", t."PhoneNumber", t."PhoneNumberConfirmed", t."RefreshToken", t."RefreshTokenExpiryTime", t."Role", t."SecurityStamp", t."TwoFactorEnabled", t."UserName", t0."VideoId", t0."TagId", t0."Id", t0."Name"
+FROM (
+    SELECT v."Id", v."AgeRating", v."CreatorId", v."Description", v."Genre", v."ThumbnailUrl", v."Title", v."UploadDate", v."VideoUrl", v."VideoYear", a."Id" AS "Id0", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+    FROM "Videos" AS v
+    INNER JOIN "AspNetUsers" AS a ON v."CreatorId" = a."Id"
+    WHERE v."Id" = @__videoPostId_0
+    LIMIT 1
+) AS t
+LEFT JOIN (
+    SELECT v0."VideoId", v0."TagId", t1."Id", t1."Name"
+    FROM "VideoTags" AS v0
+    INNER JOIN "Tags" AS t1 ON v0."TagId" = t1."Id"
+) AS t0 ON t."Id" = t0."VideoId"
+ORDER BY t."Id", t."Id0", t0."VideoId", t0."TagId"
+2025-08-12 00:33:05.281 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__userId_0='?'], CommandType='"Text"', CommandTimeout='30']
+SELECT a."Id", a."AccessFailedCount", a."ConcurrencyStamp", a."Email", a."EmailConfirmed", a."FirstName", a."LastName", a."LockoutEnabled", a."LockoutEnd", a."NormalizedEmail", a."NormalizedUserName", a."PasswordHash", a."PhoneNumber", a."PhoneNumberConfirmed", a."RefreshToken", a."RefreshTokenExpiryTime", a."Role", a."SecurityStamp", a."TwoFactorEnabled", a."UserName"
+FROM "AspNetUsers" AS a
+WHERE a."Id" = @__userId_0
+LIMIT 2
+2025-08-12 00:33:05.295 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = DateTime), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime), @p4='?', @p5='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO "Ratings" ("Id", "CreatedAt", "Score", "UpdatedAt", "UserId", "VideoId")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2025-08-12 00:33:05.302 +01:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-08-12 00:33:05.307 +01:00 [INF] Executed action MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API) in 49.7878ms
+2025-08-12 00:33:05.312 +01:00 [INF] Executed endpoint 'MetaFlix.API.Controllers.RatingController.RateMovieAsync (MetaFlix.API)'
+2025-08-12 00:33:05.315 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5032/api/Rating/rate - 200 null application/json; charset=utf-8 118.3846ms
+2025-08-12 00:33:10.782 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5032/api/Rating/9bcd3244-cc3f-4fbf-a01a-8888789b7b5b/average - null null
+2025-08-12 00:33:10.792 +01:00 [INF] Executing endpoint 'MetaFlix.API.Controllers.RatingController.GetAverageRatingAsync (MetaFlix.API)'
+2025-08-12 00:33:10.796 +01:00 [INF] Route matched with {action = "GetAverageRating", controller = "Rating"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAverageRatingAsync(System.Guid) on controller MetaFlix.API.Controllers.RatingController (MetaFlix.API).
+2025-08-12 00:33:10.811 +01:00 [INF] Executed DbCommand (4ms) [Parameters=[@__videoId_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT r."Id", r."CreatedAt", r."Score", r."UpdatedAt", r."UserId", r."VideoId"
+FROM "Ratings" AS r
+WHERE r."VideoId" = @__videoId_0
+2025-08-12 00:33:10.853 +01:00 [INF] Executing OkObjectResult, writing value of type 'MetaFlix.Application.DTOs.VideoRatingResponseDto'.
+2025-08-12 00:33:10.860 +01:00 [INF] Executed action MetaFlix.API.Controllers.RatingController.GetAverageRatingAsync (MetaFlix.API) in 55.4905ms
+2025-08-12 00:33:10.863 +01:00 [INF] Executed endpoint 'MetaFlix.API.Controllers.RatingController.GetAverageRatingAsync (MetaFlix.API)'
+2025-08-12 00:33:10.865 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5032/api/Rating/9bcd3244-cc3f-4fbf-a01a-8888789b7b5b/average - 200 null application/json; charset=utf-8 82.8364ms
+2025-08-12 00:33:47.770 +01:00 [INF] Application is shutting down...
