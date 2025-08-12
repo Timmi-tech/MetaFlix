@@ -1,26 +1,23 @@
-# Use the official ASP.NET runtime as a base image
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
-EXPOSE 80
-EXPOSE 443
+EXPOSE 5032
 
-# Use the official .NET SDK for building the application
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+ENV ASPNETCORE_URLS=http://*:$PORT
+
+USER app
+FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:9.0 AS build
+ARG configuration=Release
 WORKDIR /src
-
-# Copy only the csproj file and restore as distinct layers
-COPY ["MetaFlix.API.csproj", "./"]
-RUN dotnet restore "MetaFlix.API.csproj"
-
-# Copy the remaining source code
+COPY ["MetaFlix.API/MetaFlix.API.csproj", "MetaFlix.API/"]
+RUN dotnet restore "MetaFlix.API/MetaFlix.API.csproj"
 COPY . .
-WORKDIR /src
-RUN dotnet build "MetaFlix.API.csproj" -c Release -o /app/build
+WORKDIR "/src/MetaFlix.API"
+RUN dotnet build "MetaFlix.API.csproj" -c $configuration -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "MetaFlix.API.csproj" -c Release -o /app/publish /p:UseAppHost=false
+ARG configuration=Release
+RUN dotnet publish "MetaFlix.API.csproj" -c $configuration -o /app/publish /p:UseAppHost=false
 
-# Final runtime image
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
