@@ -1,14 +1,18 @@
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
 WORKDIR /app
 EXPOSE 5213
 
-ENV ASPNETCORE_URLS=http://*:$PORT
+ENV ASPNETCORE_URLS=http://*:5213
 
 USER app
-FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+FROM --platform=$BUILDPLATFORM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG configuration=Release
 WORKDIR /src
 COPY ["MetaFlix.API/MetaFlix.API.csproj", "MetaFlix.API/"]
+COPY ["MetaFlix.Application/MetaFlix.Application.csproj", "MetaFlix.Application/"]
+COPY ["MetaFlix.Domain/MetaFlix.Domain.csproj", "MetaFlix.Domain/"]
+COPY ["MetaFlix.Extensions/MetaFlix.Extensions.csproj", "MetaFlix.Extensions/"]
+COPY ["MetaFlix.Infrastructure/MetaFlix.Infrastructure.csproj", "MetaFlix.Infrastructure/"]
 RUN dotnet restore "MetaFlix.API/MetaFlix.API.csproj"
 COPY . .
 WORKDIR "/src/MetaFlix.API"
